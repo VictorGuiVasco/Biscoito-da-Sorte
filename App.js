@@ -5,17 +5,17 @@ export default class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      textoFrase: ' "Frase aleatoria só pra ter mesmo" ',
+      textoFrase: ' "Aperte para buscar" ',
       img: require('./src/assets/biscoito.png')
     }
 
     this.frases = [
-      'Vc é foda',
-      'Tem estudar pra cumer gente',
-      'Se vc se esforçar mais sai da merda',
-      'Para de ser baiano merda',
-      'Queria q vcs estutassme tbm',
-      'reactNative é legal'
+      'Um cliente insatisfeito significa uma nova oportunidade para aprender',
+      'O valor de uma ideia está na sua utilidade',
+      'Vá sempre além do que é esperado',
+      'Se você só consegue sonhar, você também conssegue fazer',
+      'Você não precisa ser original, basta sem muito bom naquilo que faz',
+      'Caia sete vezes, levante-se oito'
     ]
 
     this.quebraBiscoito = this.quebraBiscoito.bind(this)
@@ -45,7 +45,7 @@ export default class App extends Component {
 
         <TouchableOpacity style={styles.botao} onPress={this.quebraBiscoito}>
           <View style={styles.btnArea} >
-            <Text style={styles.textobotao} >Botaozin</Text>
+            <Text style={styles.textobotao} >Sortear</Text>
           </View>
 
         </TouchableOpacity>
